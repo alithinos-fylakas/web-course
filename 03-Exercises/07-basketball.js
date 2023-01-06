@@ -13,6 +13,7 @@ const recordes = (points = "") => {
         if (points_v[i] > greater){
             gqtd++
             greater = points_v[i]
+            continue
         }
         if (points_v[i] <= less){
             less = points_v[i]

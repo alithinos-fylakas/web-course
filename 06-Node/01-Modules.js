@@ -4,3 +4,12 @@ module.exports = {
         return "Good night"
     }
 }
+
+/*
+module.exports = {
+    GoodMorningJ: "Ohayo",
+    GoodNightJ() {
+        return "Oyasumi"
+    }
+}
+*/

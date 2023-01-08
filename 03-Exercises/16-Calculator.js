@@ -46,11 +46,12 @@ class MathC {
             return 1
         }
 
-        let values = []
+        const values = []
+
         for (let i = 0; i < expo; i++){
             values.push(base)
         }
-        console.log(values)
+        //console.log(values)
 
         if (expo > 0){
             return this.multi(values)
@@ -106,10 +107,10 @@ class CalcApp{
                 res = this.MathC.div(this.values)
                 break
             case "pow":
-                res = this.MathC.pow(this.values)
+                res = this.MathC.pow(this.values[0], this.values[1])
                 break
             case "sqrt":
-                res = this.MathC.sqrt(this.values)
+                res = this.MathC.sqrt(this.values[0], this.values[1])
                 break
             default:
                 res = NaN

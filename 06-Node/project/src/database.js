@@ -11,6 +11,12 @@ function saveProd(product) {
     return product
 }
 
+function delProd(id) {
+    product = products[id]
+    delete products[id]
+    return product
+}
+
 function getProduct(id) {
     return products[id] || {}
 }
@@ -19,3 +25,4 @@ function getProducts() {
     return Object.values(products)
 }
 
+module.exports = { saveProd, getProduct, getProducts, delProd}
